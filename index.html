@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NexaGrowth | Google Ads · SEO · Social Media Marketing</title>
+<meta name="description" content="Premium digital marketing agency specialising in Google Ads, SEO and Social Media. Certified Google Premier Partner with proven ROI."/>
+
+<!-- ✅ Google Tag Manager — replace GTM-XXXXXXX -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+
+<!-- ✅ GA4 — replace G-XXXXXXXXXX -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+
+<!-- ✅ Meta Pixel — replace XXXXXXXXXXXXXXXX -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','XXXXXXXXXXXXXXXX');fbq('track','PageView');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,300;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════
+   TOKENS
+══════════════════════════════════════════════ */
+:root{
+  --cream:#faf8f4;
+  --cream2:#f4f1eb;
+  --cream3:#ede9e0;
+  --ink:#1a1612;
+  --ink2:#2e2a25;
+  --ink3:#4a4540;
+  --muted:#8a837a;
+  --border:#e0dbd2;
+  --border2:#cec7bc;
+  --blue:#1d5fe8;
+  --blue-l:rgba(29,95,232,.08);
+  --blue-m:rgba(29,95,232,.14);
+  --orange:#e85d1d;
+  --orange-l:rgba(232,93,29,.08);
+  --green:#1a8a4a;
+  --green-l:rgba(26,138,74,.08);
+  --gold:#b8860b;
+  --gold-l:rgba(184,134,11,.1);
+  --ff:'Fraunces',serif;
+  --ffb:'DM Sans',sans-serif;
+  --r:12px;--rs:7px;
+  --shadow:0 2px 12px rgba(26,22,18,.07);
+  --shadow2:0 6px 28px rgba(26,22,18,.11);
+  --shadow3:0 16px 56px rgba(26,22,18,.13);
+}
+
+/* ══════════════════════════════════════════════
+   RESET + BASE
+══════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--cream);}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px;}
+body{background:var(--cream);color:var(--ink);font-family:var(--ffb);font-size:16px;line-height:1.6;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;}
+input,select,textarea,button{font-family:var(--ffb);}
+
+/* ══════════════════════════════════════════════
+   CSS ANIMATIONS (no JS)
+══════════════════════════════════════════════ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes slideRight{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+@keyframes spinSlow{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(1.5);}}
+@keyframes shimmer{0%{background-position:-200% center;}100%{background-position:200% center;}}
+@keyframes barGrow{from{width:0;}to{width:var(--bar-w,70%);}}
+@keyframes countUp{from{opacity:0;}to{opacity:1;}}
+
+/* stagger helpers */
+.a1{animation:fadeUp .65s .1s both;}
+.a2{animation:fadeUp .65s .22s both;}
+.a3{animation:fadeUp .65s .34s both;}
+.a4{animation:fadeUp .65s .46s both;}
+.a5{animation:fadeUp .65s .58s both;}
+.a6{animation:fadeUp .65s .70s both;}
+
+/* ══════════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════════ */
+nav{
+  position:sticky;top:0;z-index:900;
+  background:rgba(250,248,244,.92);
+  backdrop-filter:blur(18px) saturate(150%);
+  border-bottom:1px solid var(--border);
+  padding:0 5%;height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.nlogo{
+  font-family:var(--ff);font-size:1.3rem;font-weight:700;
+  color:var(--ink);display:flex;align-items:center;gap:9px;
+  letter-spacing:-.02em;
+}
+.lmark{
+  width:30px;height:30px;border-radius:8px;
+  background:var(--ink);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.85rem;font-weight:800;letter-spacing:0;
+  flex-shrink:0;
+}
+.nlinks{display:flex;gap:0;list-style:none;}
+.nlinks a{
+  color:var(--ink3);font-size:.875rem;font-weight:500;
+  padding:7px 13px;border-radius:6px;
+  transition:color .2s,background .2s;
+}
+.nlinks a:hover{color:var(--ink);background:var(--cream3);}
+.nright{display:flex;align-items:center;gap:10px;}
+.nbadge{
+  display:flex;align-items:center;gap:6px;
+  padding:5px 12px;border-radius:100px;
+  border:1px solid var(--border2);
+  color:var(--muted);font-size:.77rem;font-weight:600;
+}
+.ndot{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s infinite;}
+.ncta{
+  background:var(--ink);color:var(--cream);
+  padding:9px 20px;border-radius:100px;
+  font-weight:600;font-size:.84rem;
+  transition:background .2s,transform .2s;
+  box-shadow:var(--shadow);
+}
+.ncta:hover{background:var(--ink2);transform:translateY(-1px);}
+
+/* ══════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════ */
+.hero{
+  min-height:92vh;padding:80px 5% 60px;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:40px;align-items:center;
+  position:relative;overflow:hidden;
+  background:var(--cream);
+}
+
+/* diagonal stripe texture */
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:repeating-linear-gradient(
+    -45deg,
+    transparent,transparent 40px,
+    rgba(26,22,18,.018) 40px,rgba(26,22,18,.018) 41px
+  );
+  pointer-events:none;
+}
+
+/* large decorative circle */
+.hero::after{
+  content:'';position:absolute;
+  width:600px;height:600px;border-radius:50%;
+  border:1px solid var(--border);
+  right:-150px;top:50%;transform:translateY(-50%);
+  pointer-events:none;
+}
+
+.hero-text{position:relative;z-index:2;}
+
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--blue-l);
+  border:1px solid var(--blue-m);
+  padding:6px 14px;border-radius:100px;
+  font-size:.78rem;font-weight:600;color:var(--blue);
+  margin-bottom:28px;
+  animation:fadeUp .6s .05s both;
+}
+.eydot{width:5px;height:5px;background:var(--blue);border-radius:50%;}
+
+h1.hero-h1{
+  font-family:var(--ff);
+  font-size:clamp(2.8rem,5.5vw,4.8rem);
+  font-weight:800;line-height:1.0;
+  letter-spacing:-.03em;
+  color:var(--ink);
+  margin-bottom:24px;
+  animation:fadeUp .7s .15s both;
+}
+h1.hero-h1 em{
+  font-style:italic;font-weight:300;
+  color:var(--blue);
+}
+h1.hero-h1 .stroke{
+  -webkit-text-stroke:2px var(--ink);
+  color:transparent;
+}
+
+.hero-sub{
+  font-size:1.05rem;color:var(--ink3);
+  max-width:520px;line-height:1.8;
+  font-weight:300;margin-bottom:36px;
+  animation:fadeUp .7s .28s both;
+}
+
+.hero-actions{
+  display:flex;gap:12px;flex-wrap:wrap;
+  animation:fadeUp .7s .38s both;
+}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--ink);color:var(--cream);
+  padding:14px 28px;border-radius:100px;
+  font-weight:600;font-size:.95rem;
+  box-shadow:var(--shadow2);
+  transition:all .25s;
+}
+.btn-primary:hover{background:var(--ink2);transform:translateY(-2px);box-shadow:var(--shadow3);}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;color:var(--ink);
+  padding:14px 28px;border-radius:100px;
+  font-weight:600;font-size:.95rem;
+  border:1.5px solid var(--border2);
+  transition:all .25s;
+}
+.btn-outline:hover{border-color:var(--ink3);background:var(--cream3);}
+
+.hero-trust{
+  display:flex;align-items:center;gap:16px;
+  margin-top:32px;
+  animation:fadeUp .7s .5s both;
+}
+.trust-avatars{display:flex;}
+.trust-av{
+  width:32px;height:32px;border-radius:50%;
+  border:2px solid var(--cream);
+  background:var(--ink);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;font-weight:700;
+  margin-left:-8px;
+}
+.trust-av:first-child{margin-left:0;}
+.trust-av.a{background:#c47a3a;}
+.trust-av.b{background:#3a6bc4;}
+.trust-av.c{background:#3ac47a;}
+.trust-txt{font-size:.83rem;color:var(--muted);}
+.trust-txt strong{color:var(--ink);font-weight:600;}
+.trust-stars{color:var(--gold);font-size:.75rem;display:block;margin-top:1px;}
+
+/* HERO VISUAL (right side) */
+.hero-visual{
+  position:relative;z-index:2;
+  animation:fadeIn .8s .4s both;
+}
+
+/* main card */
+.hero-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:32px;
+  box-shadow:var(--shadow3);
+  position:relative;
+}
+.hero-card-top{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:24px;padding-bottom:20px;
+  border-bottom:1px solid var(--border);
+}
+.hct-icon{
+  width:44px;height:44px;border-radius:11px;
+  background:var(--blue-l);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;
+}
+.hct-title{font-family:var(--ff);font-weight:700;font-size:1rem;color:var(--ink);}
+.hct-sub{font-size:.78rem;color:var(--muted);}
+.hct-badge{
+  margin-left:auto;padding:3px 9px;border-radius:100px;
+  font-size:.7rem;font-weight:700;
+  background:var(--green-l);color:var(--green);
+  border:1px solid rgba(26,138,74,.2);
+}
+
+/* metric rows */
+.metric-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 0;border-bottom:1px solid var(--cream2);
+}
+.metric-row:last-of-type{border-bottom:none;}
+.mr-label{font-size:.83rem;color:var(--ink3);}
+.mr-val{font-family:var(--ff);font-weight:700;font-size:1rem;color:var(--ink);}
+.mr-change{
+  font-size:.73rem;font-weight:600;
+  padding:2px 7px;border-radius:100px;
+}
+.mr-change.up{background:var(--green-l);color:var(--green);}
+.mr-change.dn{background:var(--orange-l);color:var(--orange);}
+
+/* bar inside card */
+.bar-wrap{margin-top:20px;}
+.bar-label-row{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);margin-bottom:7px;}
+.bar-track{height:6px;background:var(--cream2);border-radius:3px;overflow:hidden;margin-bottom:10px;}
+.bar-fill{
+  height:100%;border-radius:3px;
+  transform-origin:left;
+  animation:barGrow 1.2s cubic-bezier(.4,0,.2,1) .8s both;
+}
+.bf-blue{background:linear-gradient(90deg,var(--blue),#5b8aff);--bar-w:78%;}
+.bf-orange{background:linear-gradient(90deg,var(--orange),#ff9a6c);--bar-w:62%;}
+.bf-green{background:linear-gradient(90deg,var(--green),#4dd68a);--bar-w:85%;}
+
+/* floating cards */
+.float-card{
+  position:absolute;
+  background:#fff;border:1px solid var(--border);
+  border-radius:12px;padding:12px 16px;
+  box-shadow:var(--shadow2);
+  animation:float 4s ease-in-out infinite;
+}
+.fc1{bottom:-20px;left:-30px;animation-delay:0s;}
+.fc2{top:-16px;right:-20px;animation-delay:1.8s;}
+.fc3{top:40%;right:-40px;animation-delay:.9s;}
+.fcard-num{font-family:var(--ff);font-size:1.3rem;font-weight:800;color:var(--ink);}
+.fcard-lbl{font-size:.7rem;color:var(--muted);font-weight:500;white-space:nowrap;}
+.fcard-icon{font-size:.9rem;margin-bottom:2px;}
+
+/* ══════════════════════════════════════════════
+   MARQUEE
+══════════════════════════════════════════════ */
+.mq-wrap{
+  overflow:hidden;
+  padding:18px 0;
+  background:var(--ink);
+  position:relative;
+}
+.mq-wrap::before,.mq-wrap::after{
+  content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;
+}
+.mq-wrap::before{left:0;background:linear-gradient(to right,var(--ink),transparent);}
+.mq-wrap::after{right:0;background:linear-gradient(to left,var(--ink),transparent);}
+.mq-track{
+  display:flex;width:max-content;
+  animation:marquee 28s linear infinite;
+}
+.mq-item{
+  display:flex;align-items:center;gap:8px;
+  padding:0 28px;
+  font-size:.78rem;font-weight:600;
+  color:rgba(250,248,244,.45);
+  letter-spacing:.1em;text-transform:uppercase;
+  white-space:nowrap;
+}
+.mq-sep{color:rgba(250,248,244,.25);font-size:.4rem;}
+
+/* ══════════════════════════════════════════════
+   SECTION BASE
+══════════════════════════════════════════════ */
+.sec{padding:100px 5%;}
+.sec-alt{background:var(--cream2);}
+.sec-alt2{background:#fff;}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:.7rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--blue);
+  margin-bottom:12px;
+}
+.eyebrow::before{content:'';width:16px;height:1.5px;background:var(--blue);}
+
+h2.stitle{
+  font-family:var(--ff);
+  font-size:clamp(1.9rem,4vw,3rem);
+  font-weight:800;line-height:1.1;
+  letter-spacing:-.025em;color:var(--ink);
+  margin-bottom:12px;
+}
+h2.stitle em{font-style:italic;font-weight:300;color:var(--blue);}
+.sdesc{
+  color:var(--ink3);font-size:1rem;
+  max-width:520px;line-height:1.8;
+  margin-bottom:56px;font-weight:300;
+}
+
+/* ══════════════════════════════════════════════
+   SERVICES GRID
+══════════════════════════════════════════════ */
+.srv-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+}
+
+.srv-card{
+  background:#fff;
+  padding:44px 36px;
+  position:relative;overflow:hidden;
+  transition:background .3s;
+}
+.srv-card:hover{background:var(--cream);}
+
+/* top colour strip */
+.srv-card::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--sc,var(--blue));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .45s cubic-bezier(.4,0,.2,1);
+}
+.srv-card:hover::before{transform:scaleX(1);}
+
+/* subtle corner decoration */
+.srv-card::after{
+  content:'';
+  position:absolute;bottom:-40px;right:-40px;
+  width:120px;height:120px;border-radius:50%;
+  background:var(--sc-a,rgba(29,95,232,.04));
+  pointer-events:none;
+  transition:transform .4s;
+}
+.srv-card:hover::after{transform:scale(1.5);}
+
+.srv-card.ora{--sc:var(--orange);--sc-a:rgba(232,93,29,.04);}
+.srv-card.grn{--sc:var(--green);--sc-a:rgba(26,138,74,.04);}
+
+.srv-ico{
+  width:56px;height:56px;border-radius:14px;
+  border:1px solid var(--border2);
+  background:var(--cream2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.45rem;margin-bottom:24px;
+  transition:transform .3s,box-shadow .3s;
+  position:relative;z-index:1;
+}
+.srv-card:hover .srv-ico{transform:scale(1.08) rotate(-3deg);box-shadow:var(--shadow);}
+
+.srv-card h3{
+  font-family:var(--ff);font-size:1.25rem;font-weight:700;
+  color:var(--ink);margin-bottom:12px;
+  position:relative;z-index:1;
+}
+.srv-card p{
+  color:var(--ink3);font-size:.9rem;line-height:1.75;
+  margin-bottom:24px;font-weight:300;
+  position:relative;z-index:1;
+}
+.srv-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px;position:relative;z-index:1;}
+.srv-tag{
+  font-size:.72rem;padding:4px 11px;border-radius:100px;
+  font-weight:600;background:var(--cream2);
+  border:1px solid var(--border);color:var(--ink3);
+  transition:all .2s;
+}
+.srv-card:hover .srv-tag{background:var(--cream3);border-color:var(--border2);}
+
+.srv-link{
+  display:inline-flex;align-items:center;gap:6px;
+  color:var(--sc,var(--blue));font-weight:600;font-size:.86rem;
+  transition:gap .2s;position:relative;z-index:1;
+}
+.srv-link:hover{gap:11px;}
+.srv-link::after{content:'→';}
+
+/* ══════════════════════════════════════════════
+   STATS BAND
+══════════════════════════════════════════════ */
+.stats-band{
+  background:var(--ink);
+  padding:0 5%;
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat-block{
+  padding:52px 0;text-align:center;
+  border-right:1px solid rgba(250,248,244,.08);
+  position:relative;overflow:hidden;
+}
+.stat-block:last-child{border-right:none;}
+.stat-block::after{
+  content:'';position:absolute;bottom:0;left:50%;
+  transform:translateX(-50%);
+  width:0;height:2px;
+  background:rgba(250,248,244,.25);
+  transition:width .4s;
+}
+.stat-block:hover::after{width:60%;}
+.stat-num{
+  font-family:var(--ff);
+  font-size:3rem;font-weight:800;
+  color:var(--cream);display:block;line-height:1;
+  letter-spacing:-.03em;
+}
+.stat-lbl{color:rgba(250,248,244,.45);font-size:.82rem;margin-top:8px;font-weight:500;}
+
+/* ══════════════════════════════════════════════
+   EEAT
+══════════════════════════════════════════════ */
+.eeat-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.eeat-card{
+  padding:36px 32px;border-radius:var(--r);
+  background:#fff;border:1px solid var(--border);
+  position:relative;overflow:hidden;
+  transition:box-shadow .3s,transform .3s;
+}
+.eeat-card:hover{box-shadow:var(--shadow2);transform:translateY(-3px);}
+
+.eeat-card::before{
+  content:attr(data-l);
+  position:absolute;top:-12px;right:16px;
+  font-family:var(--ff);font-size:7rem;font-weight:900;
+  color:var(--ink);opacity:.03;line-height:1;
+  transition:opacity .3s;
+}
+.eeat-card:hover::before{opacity:.05;}
+
+.eeat-ico{
+  width:44px;height:44px;border-radius:11px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;margin-bottom:16px;
+}
+.eeat-card:nth-child(1) .eeat-ico{background:var(--blue-l);border:1px solid var(--blue-m);}
+.eeat-card:nth-child(2) .eeat-ico{background:var(--orange-l);border:1px solid rgba(232,93,29,.15);}
+.eeat-card:nth-child(3) .eeat-ico{background:var(--gold-l);border:1px solid rgba(184,134,11,.18);}
+.eeat-card:nth-child(4) .eeat-ico{background:var(--green-l);border:1px solid rgba(26,138,74,.18);}
+
+.eeat-card h3{font-family:var(--ff);font-size:1.1rem;font-weight:700;margin-bottom:9px;color:var(--ink);}
+.eeat-card p{color:var(--ink3);font-size:.88rem;line-height:1.75;font-weight:300;}
+
+/* ══════════════════════════════════════════════
+   PROCESS TIMELINE
+══════════════════════════════════════════════ */
+.process-list{
+  display:flex;flex-direction:column;gap:0;
+  max-width:860px;position:relative;
+}
+.process-list::before{
+  content:'';
+  position:absolute;left:24px;top:0;bottom:0;width:1px;
+  background:var(--border2);
+}
+
+.proc-item{
+  display:flex;gap:36px;
+  padding:32px 0;
+  border-bottom:1px solid var(--border);
+  transition:all .3s;
+  cursor:default;
+}
+.proc-item:last-child{border-bottom:none;}
+.proc-item:hover .proc-body{opacity:1;}
+.proc-body{opacity:.55;transition:opacity .3s;}
+.proc-item:hover .proc-body{opacity:1;}
+
+.proc-num{
+  width:48px;height:48px;flex-shrink:0;
+  background:#fff;
+  border:1.5px solid var(--border2);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--ff);font-size:.82rem;font-weight:700;
+  color:var(--blue);
+  position:relative;z-index:1;
+  transition:all .3s;
+}
+.proc-item:hover .proc-num{
+  background:var(--ink);color:var(--cream);
+  border-color:var(--ink);
+}
+
+.proc-body h3{
+  font-family:var(--ff);font-size:1.15rem;font-weight:700;
+  color:var(--ink);margin-bottom:8px;padding-top:10px;
+}
+.proc-body p{color:var(--ink3);font-size:.9rem;line-height:1.75;font-weight:300;}
+.proc-pill{
+  display:inline-block;margin-top:10px;
+  font-size:.72rem;font-weight:600;color:var(--blue);
+  padding:3px 10px;border-radius:100px;
+  background:var(--blue-l);border:1px solid var(--blue-m);
+}
+
+/* ══════════════════════════════════════════════
+   TESTIMONIALS
+══════════════════════════════════════════════ */
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.testi-card{
+  padding:32px 28px;background:#fff;
+  border:1px solid var(--border);border-radius:var(--r);
+  display:flex;flex-direction:column;
+  transition:box-shadow .3s,transform .3s;
+}
+.testi-card:hover{box-shadow:var(--shadow2);transform:translateY(-3px);}
+
+.result-pill{
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--green-l);border:1px solid rgba(26,138,74,.2);
+  color:var(--green);font-size:.72rem;font-weight:700;
+  padding:3px 9px;border-radius:100px;margin-bottom:14px;
+  align-self:flex-start;
+}
+.tq-mark{
+  font-family:var(--ff);font-size:2.8rem;line-height:.8;
+  color:var(--blue);opacity:.15;margin-bottom:8px;
+}
+.testi-text{
+  color:var(--ink);font-size:.92rem;line-height:1.8;
+  margin-bottom:24px;font-weight:300;font-style:italic;
+  flex:1;
+}
+.testi-meta{display:flex;align-items:center;gap:12px;}
+.tav{
+  width:42px;height:42px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--ff);font-weight:700;font-size:.88rem;color:#fff;
+}
+.tav.a{background:linear-gradient(135deg,#c47a3a,#e8a85d);}
+.tav.b{background:linear-gradient(135deg,#3a6bc4,#6b9ce8);}
+.tav.c{background:linear-gradient(135deg,#3a8a54,#6bc487);}
+.tname{font-weight:600;font-size:.87rem;color:var(--ink);}
+.trole{color:var(--muted);font-size:.76rem;margin-top:1px;}
+.tstars{margin-left:auto;color:var(--gold);font-size:.72rem;letter-spacing:1px;}
+
+/* ══════════════════════════════════════════════
+   WHY US
+══════════════════════════════════════════════ */
+.why-layout{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:64px;align-items:start;
+}
+.why-feats{display:flex;flex-direction:column;}
+.why-feat{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:24px 0;border-bottom:1px solid var(--border);
+  transition:background .2s;
+}
+.why-feat:last-child{border-bottom:none;}
+.why-feat-ico{
+  width:40px;height:40px;flex-shrink:0;
+  border-radius:10px;border:1px solid var(--border2);
+  background:var(--cream2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;transition:transform .25s;
+}
+.why-feat:hover .why-feat-ico{transform:scale(1.1);}
+.why-feat h4{font-family:var(--ff);font-weight:700;font-size:.96rem;margin-bottom:4px;color:var(--ink);}
+.why-feat p{color:var(--ink3);font-size:.86rem;line-height:1.65;font-weight:300;}
+
+/* cert panel */
+.cert-panel{
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r);padding:32px 28px;
+  box-shadow:var(--shadow);
+  position:relative;overflow:hidden;
+}
+.cert-panel::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--orange),var(--green));
+}
+.cert-panel h3{font-family:var(--ff);font-weight:700;margin-bottom:18px;font-size:.97rem;}
+.cert-list{display:flex;flex-direction:column;gap:8px;}
+.cert-row{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 12px;border-radius:var(--rs);
+  background:var(--cream2);border:1px solid var(--border);
+  font-size:.84rem;font-weight:500;color:var(--ink2);
+  transition:border-color .2s,background .2s;
+}
+.cert-row:hover{border-color:var(--border2);background:var(--cream3);}
+.cert-badge{
+  margin-left:auto;padding:2px 8px;border-radius:100px;
+  font-size:.67rem;font-weight:800;
+  background:var(--green-l);color:var(--green);
+  border:1px solid rgba(26,138,74,.2);
+}
+
+/* ══════════════════════════════════════════════
+   PRICING
+══════════════════════════════════════════════ */
+.price-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;align-items:stretch;
+}
+.price-card{
+  padding:40px 32px;
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r);
+  display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+  transition:box-shadow .3s,transform .3s;
+}
+.price-card:hover{box-shadow:var(--shadow3);transform:translateY(-5px);}
+.price-card.featured{
+  border-color:var(--blue);
+  background:var(--ink);
+}
+.price-card.featured::before{
+  content:'MOST POPULAR';
+  position:absolute;top:0;right:24px;
+  background:var(--blue);color:#fff;
+  padding:4px 14px;border-radius:0 0 8px 8px;
+  font-size:.67rem;font-weight:800;letter-spacing:.08em;
+}
+
+.price-plan{font-size:.72rem;font-weight:700;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;}
+.price-card.featured .price-plan{color:rgba(250,248,244,.5);}
+.price-amt{
+  font-family:var(--ff);font-size:3rem;font-weight:800;
+  color:var(--ink);line-height:1;margin-bottom:4px;letter-spacing:-.03em;
+}
+.price-card.featured .price-amt{color:var(--cream);}
+.price-amt sup{font-size:1.2rem;vertical-align:super;}
+.price-per{color:var(--muted);font-size:.82rem;margin-bottom:28px;}
+.price-card.featured .price-per{color:rgba(250,248,244,.4);}
+.price-div{height:1px;background:var(--border);margin-bottom:24px;}
+.price-card.featured .price-div{background:rgba(250,248,244,.1);}
+.price-feats{list-style:none;display:flex;flex-direction:column;gap:10px;flex:1;margin-bottom:28px;}
+.price-feats li{
+  display:flex;align-items:flex-start;gap:9px;
+  font-size:.87rem;color:var(--ink3);line-height:1.5;
+}
+.price-card.featured .price-feats li{color:rgba(250,248,244,.7);}
+.price-feats li::before{
+  content:'';width:16px;height:16px;flex-shrink:0;margin-top:1px;
+  border-radius:50%;
+  background:var(--green-l);
+  border:1px solid rgba(26,138,74,.25);
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8l3 3 5-5' stroke='%231a8a4a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;
+}
+.price-card.featured .price-feats li::before{
+  background-color:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.15);
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8l3 3 5-5' stroke='%23faf8f4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.price-btn{
+  display:block;text-align:center;
+  padding:13px;border-radius:100px;
+  font-weight:600;font-size:.9rem;
+  transition:all .25s;
+}
+.price-btn.dark{background:var(--ink);color:var(--cream);box-shadow:var(--shadow);}
+.price-btn.dark:hover{background:var(--ink2);transform:translateY(-1px);box-shadow:var(--shadow2);}
+.price-btn.light{border:1.5px solid var(--border2);color:var(--ink);}
+.price-btn.light:hover{border-color:var(--ink3);background:var(--cream2);}
+.price-btn.inv{background:rgba(250,248,244,.1);color:var(--cream);border:1px solid rgba(250,248,244,.15);}
+.price-btn.inv:hover{background:rgba(250,248,244,.18);}
+
+/* ══════════════════════════════════════════════
+   FAQ  (CSS-only accordion via :has or checkbox)
+══════════════════════════════════════════════ */
+.faq-wrap{max-width:720px;margin:0 auto;}
+
+/* hide checkboxes */
+.faq-toggle{display:none;}
+
+.faq-item{border-bottom:1px solid var(--border);}
+
+.faq-label{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 0;cursor:pointer;
+  font-size:.95rem;font-weight:600;color:var(--ink);
+  gap:14px;user-select:none;
+  transition:color .2s;
+}
+.faq-label:hover{color:var(--blue);}
+
+.faq-icon{
+  width:28px;height:28px;flex-shrink:0;
+  border-radius:50%;
+  background:var(--cream2);border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;line-height:1;
+  transition:all .3s;
+  font-style:normal;
+}
+.faq-icon::before{content:'+';color:var(--ink3);}
+
+.faq-answer{
+  max-height:0;overflow:hidden;
+  transition:max-height .4s cubic-bezier(.4,0,.2,1),padding .3s;
+  color:var(--ink3);font-size:.9rem;line-height:1.8;font-weight:300;
+}
+
+/* toggled state */
+.faq-toggle:checked ~ .faq-label .faq-icon{
+  background:var(--blue);border-color:var(--blue);
+}
+.faq-toggle:checked ~ .faq-label .faq-icon::before{content:'×';color:#fff;font-size:1.1rem;}
+.faq-toggle:checked ~ .faq-label{color:var(--blue);}
+.faq-toggle:checked ~ .faq-answer{max-height:300px;padding-bottom:20px;}
+
+/* ══════════════════════════════════════════════
+   CONTACT SECTION
+══════════════════════════════════════════════ */
+.contact-section{
+  padding:100px 5%;background:var(--cream);
+  position:relative;overflow:hidden;
+}
+.contact-section::before{
+  content:'';position:absolute;inset:0;
+  background-image:repeating-linear-gradient(
+    90deg,transparent,transparent 80px,
+    rgba(26,22,18,.018) 80px,rgba(26,22,18,.018) 81px
+  );pointer-events:none;
+}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1.5fr;
+  gap:72px;align-items:start;position:relative;z-index:1;
+}
+.contact-info h2{margin-bottom:14px;}
+.contact-info p{color:var(--ink3);line-height:1.8;font-weight:300;margin-bottom:32px;}
+
+.cpoints{display:flex;flex-direction:column;gap:12px;}
+.cpoint{
+  display:flex;align-items:center;gap:13px;
+  padding:13px 16px;border-radius:var(--rs);
+  background:#fff;border:1px solid var(--border);
+  transition:border-color .2s;
+}
+.cpoint:hover{border-color:var(--border2);}
+.cpoint-ico{
+  width:36px;height:36px;border-radius:8px;
+  background:var(--blue-l);border:1px solid var(--blue-m);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;flex-shrink:0;
+}
+.cpoint-lbl{font-size:.71rem;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;}
+.cpoint-val{font-size:.88rem;font-weight:600;color:var(--ink);margin-top:1px;}
+
+/* ══════════════════════════════════════════════
+   CONTACT FORM CARD
+══════════════════════════════════════════════ */
+.form-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  box-shadow:var(--shadow3);
+  overflow:hidden;
+  position:relative;
+}
+.form-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--orange),var(--green));
+}
+.form-inner{padding:36px 36px 32px;}
+.form-title{
+  font-family:var(--ff);font-size:1.2rem;font-weight:700;
+  color:var(--ink);margin-bottom:6px;
+}
+.form-sub{color:var(--muted);font-size:.83rem;margin-bottom:28px;font-weight:300;}
+
+/* Fields */
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.field label{font-size:.74rem;font-weight:700;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase;}
+.field input,
+.field select,
+.field textarea{
+  width:100%;padding:11px 14px;
+  background:var(--cream2);
+  border:1.5px solid var(--border);
+  border-radius:var(--rs);
+  color:var(--ink);font-size:.9rem;
+  outline:none;
+  transition:border-color .2s,background .2s,box-shadow .2s;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  border-color:var(--blue);
+  background:#fff;
+  box-shadow:0 0 0 3px rgba(29,95,232,.09);
+}
+.field input::placeholder{color:var(--muted);}
+.field select option{background:#fff;}
+.field textarea{resize:vertical;min-height:100px;line-height:1.6;}
+
+/* service checkboxes */
+.svc-checks{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:14px;}
+.svc-check-item{position:relative;}
+.svc-check-item input[type="checkbox"]{
+  position:absolute;opacity:0;width:0;height:0;
+}
+.svc-check-item label{
+  display:flex;align-items:center;gap:9px;
+  padding:11px 13px;border-radius:var(--rs);
+  background:var(--cream2);border:1.5px solid var(--border);
+  font-size:.84rem;font-weight:500;color:var(--ink3);
+  cursor:pointer;transition:all .2s;
+  user-select:none;
+}
+.svc-check-item label:hover{border-color:var(--border2);background:var(--cream3);}
+.svc-check-item input:checked + label{
+  border-color:var(--blue);
+  background:var(--blue-l);
+  color:var(--ink);
+}
+.svc-check-item label::before{
+  content:'';width:15px;height:15px;flex-shrink:0;
+  border-radius:4px;
+  border:1.5px solid var(--border2);
+  background:#fff;
+  transition:all .2s;
+}
+.svc-check-item input:checked + label::before{
+  background:var(--blue);
+  border-color:var(--blue);
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 7.5l3.5 3.5 5.5-5.5' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;
+}
+
+/* budget range */
+.range-wrap{position:relative;padding-bottom:4px;}
+.range-input{
+  -webkit-appearance:none;
+  width:100%;height:5px;
+  background:var(--cream3);
+  border-radius:3px;outline:none;
+  cursor:pointer;margin-bottom:8px;
+}
+.range-input::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:18px;height:18px;border-radius:50%;
+  background:var(--ink);
+  border:2px solid #fff;
+  box-shadow:var(--shadow);
+  cursor:pointer;
+}
+.range-labels{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);}
+
+/* submit button */
+.form-submit{
+  display:block;width:100%;
+  background:var(--ink);color:var(--cream);
+  border:none;padding:14px;
+  border-radius:100px;
+  font-size:.95rem;font-weight:600;
+  cursor:pointer;
+  box-shadow:var(--shadow2);
+  transition:all .25s;
+  margin-top:6px;
+}
+.form-submit:hover{background:var(--ink2);transform:translateY(-2px);box-shadow:var(--shadow3);}
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+footer{
+  background:var(--ink);
+  padding:68px 5% 32px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:48px;margin-bottom:48px;
+}
+.footer-brand p{
+  color:rgba(250,248,244,.45);font-size:.87rem;
+  line-height:1.75;margin-top:14px;max-width:260px;font-weight:300;
+}
+.footer-socials{display:flex;gap:8px;margin-top:18px;}
+.fsoc-btn{
+  width:32px;height:32px;border-radius:7px;
+  background:rgba(250,248,244,.06);
+  border:1px solid rgba(250,248,244,.1);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(250,248,244,.45);font-size:.78rem;
+  transition:all .2s;
+}
+.fsoc-btn:hover{background:rgba(250,248,244,.12);color:var(--cream);border-color:rgba(250,248,244,.2);}
+.footer-col h4{
+  font-family:var(--ff);font-weight:700;font-size:.88rem;
+  color:var(--cream);margin-bottom:18px;
+}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col a{
+  color:rgba(250,248,244,.45);font-size:.85rem;
+  display:flex;align-items:center;gap:6px;
+  transition:color .2s;
+}
+.footer-col a:hover{color:rgba(250,248,244,.8);}
+.footer-col a::before{
+  content:'';width:3px;height:3px;border-radius:50%;
+  background:rgba(250,248,244,.2);flex-shrink:0;
+  transition:background .2s;
+}
+.footer-col a:hover::before{background:var(--blue);}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  padding-top:24px;border-top:1px solid rgba(250,248,244,.08);
+  color:rgba(250,248,244,.3);font-size:.79rem;flex-wrap:wrap;gap:12px;
+}
+.footer-bottom a{color:rgba(250,248,244,.3);transition:color .2s;}
+.footer-bottom a:hover{color:rgba(250,248,244,.6);}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr;min-height:auto;padding-bottom:80px;}
+  .hero-visual{display:none;}
+  .srv-grid{grid-template-columns:1fr;}
+  .why-layout{grid-template-columns:1fr;}
+}
+@media(max-width:900px){
+  .testi-grid{grid-template-columns:1fr;}
+  .price-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto;}
+  .contact-grid{grid-template-columns:1fr;}
+  .eeat-grid{grid-template-columns:1fr;}
+  .stats-band{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:680px){
+  .nlinks{display:none;}
+  .frow{grid-template-columns:1fr;}
+  .svc-checks{grid-template-columns:1fr;}
+  .stats-band{grid-template-columns:1fr 1fr;}
+  .hero-actions{flex-direction:column;max-width:280px;}
+  .footer-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<nav>
+  <a href="#" class="nlogo">
+    <div class="lmark">N</div>
+    NexaGrowth
+  </a>
+  <ul class="nlinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nright">
+    <div class="nbadge"><span class="ndot"></span>Accepting Clients</div>
+    <a href="#contact" class="ncta">Get Free Audit</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow a1">
+      <span class="eydot"></span>
+      Google Premier Partner · Meta Business Partner · 8+ Years
+    </div>
+
+    <h1 class="hero-h1 a2">
+      Marketing That<br>
+      <em>Actually</em> Scales<span class="stroke">.</span>
+    </h1>
+
+    <p class="hero-sub a3">
+      We engineer measurable growth for ambitious brands through precision Google Ads, compounding SEO, and social media that converts — backed by certified expertise and complete transparency.
+    </p>
+
+    <div class="hero-actions a4">
+      <a href="#contact" class="btn-primary">Get Free Audit →</a>
+      <a href="#services" class="btn-outline">Explore Services</a>
+    </div>
+
+    <div class="hero-trust a5">
+      <div class="trust-avatars">
+        <div class="trust-av a">SR</div>
+        <div class="trust-av b">MK</div>
+        <div class="trust-av c">AP</div>
+      </div>
+      <div class="trust-txt">
+        <strong>350+ brands</strong> trust NexaGrowth
+        <span class="trust-stars">★★★★★ 4.9 / 5.0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Visual — right column -->
+  <div class="hero-visual a6">
+    <div class="hero-card">
+      <div class="hero-card-top">
+        <div class="hct-icon">📊</div>
+        <div>
+          <div class="hct-title">Campaign Performance</div>
+          <div class="hct-sub">Last 30 days · All channels</div>
+        </div>
+        <span class="hct-badge">↑ Live</span>
+      </div>
+
+      <div class="metric-row">
+        <span class="mr-label">Google Ads ROAS</span>
+        <span class="mr-val">5.2×</span>
+        <span class="mr-change up">↑ +188%</span>
+      </div>
+      <div class="metric-row">
+        <span class="mr-label">Organic Traffic</span>
+        <span class="mr-val">34,820</span>
+        <span class="mr-change up">↑ +340%</span>
+      </div>
+      <div class="metric-row">
+        <span class="mr-label">Cost Per Lead</span>
+        <span class="mr-val">$12.40</span>
+        <span class="mr-change up">↓ -60%</span>
+      </div>
+      <div class="metric-row">
+        <span class="mr-label">Meta Ads CPC</span>
+        <span class="mr-val">$0.38</span>
+        <span class="mr-change up">↓ -42%</span>
+      </div>
+
+      <div class="bar-wrap">
+        <div class="bar-label-row"><span>Channel ROI Index</span><span></span></div>
+        <div class="bar-label-row"><span style="font-size:.75rem;color:var(--ink3)">Google Ads</span><span style="font-size:.75rem;color:var(--blue)">78%</span></div>
+        <div class="bar-track"><div class="bar-fill bf-blue" style="--bar-w:78%"></div></div>
+        <div class="bar-label-row"><span style="font-size:.75rem;color:var(--ink3)">SEO</span><span style="font-size:.75rem;color:var(--orange)">85%</span></div>
+        <div class="bar-track"><div class="bar-fill bf-green" style="--bar-w:85%"></div></div>
+        <div class="bar-label-row"><span style="font-size:.75rem;color:var(--ink3)">Social Ads</span><span style="font-size:.75rem;color:var(--green)">62%</span></div>
+        <div class="bar-track"><div class="bar-fill bf-orange" style="--bar-w:62%"></div></div>
+      </div>
+    </div>
+
+    <!-- Floating stat cards -->
+    <div class="float-card fc1">
+      <div class="fcard-icon">🎯</div>
+      <div class="fcard-num">4.8×</div>
+      <div class="fcard-lbl">Avg. ROAS</div>
+    </div>
+    <div class="float-card fc2">
+      <div class="fcard-icon">📈</div>
+      <div class="fcard-num">+340%</div>
+      <div class="fcard-lbl">Organic Traffic</div>
+    </div>
+    <div class="float-card fc3">
+      <div class="fcard-icon">💰</div>
+      <div class="fcard-num">$28M+</div>
+      <div class="fcard-lbl">Ad Spend</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     MARQUEE
+════════════════════════════════════════ -->
+<div class="mq-wrap">
+  <div class="mq-track">
+    <span class="mq-item">Google Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">SEO Strategy <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Meta Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">GA4 Analytics <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Performance Max <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Content Marketing <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Google Tag Manager <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Link Building <span class="mq-sep">✦</span></span>
+    <span class="mq-item">TikTok Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">CRO <span class="mq-sep">✦</span></span>
+    <span class="mq-item">LinkedIn Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">YouTube Ads <span class="mq-sep">✦</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="mq-item">Google Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">SEO Strategy <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Meta Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">GA4 Analytics <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Performance Max <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Content Marketing <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Google Tag Manager <span class="mq-sep">✦</span></span>
+    <span class="mq-item">Link Building <span class="mq-sep">✦</span></span>
+    <span class="mq-item">TikTok Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">CRO <span class="mq-sep">✦</span></span>
+    <span class="mq-item">LinkedIn Ads <span class="mq-sep">✦</span></span>
+    <span class="mq-item">YouTube Ads <span class="mq-sep">✦</span></span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════ -->
+<section class="sec sec-alt2" id="services">
+  <div class="eyebrow">Our Services</div>
+  <h2 class="stitle">Three Channels.<br><em>One</em> Growth Engine.</h2>
+  <p class="sdesc">Each service is built around measurable outcomes — not vanity metrics. We obsess over what actually moves your revenue and bottom line.</p>
+
+  <div class="srv-grid">
+    <div class="srv-card">
+      <div class="srv-ico">📈</div>
+      <h3>Google Ads Management</h3>
+      <p>From Search and Shopping to Performance Max and YouTube — we architect campaigns that convert at scale. Every rupee tracked, every audience tested, every bid optimised for maximum profitable return on spend.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">Search Campaigns</span>
+        <span class="srv-tag">Shopping & PMax</span>
+        <span class="srv-tag">YouTube Ads</span>
+        <span class="srv-tag">Remarketing</span>
+        <span class="srv-tag">Smart Bidding</span>
+        <span class="srv-tag">Conversion Tracking</span>
+      </div>
+      <a href="#contact" class="srv-link">Start with Google Ads</a>
+    </div>
+
+    <div class="srv-card ora">
+      <div class="srv-ico">🔍</div>
+      <h3>Search Engine Optimisation</h3>
+      <p>Technical SEO that removes every ranking barrier. Content strategy that captures buyer intent. Authority link building that compounds month over month. We build organic traffic that doesn't disappear overnight.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">Technical SEO</span>
+        <span class="srv-tag">On-Page Optimisation</span>
+        <span class="srv-tag">Authority Links</span>
+        <span class="srv-tag">Local SEO</span>
+        <span class="srv-tag">Content Strategy</span>
+        <span class="srv-tag">Core Web Vitals</span>
+      </div>
+      <a href="#contact" class="srv-link">Grow Organic Traffic</a>
+    </div>
+
+    <div class="srv-card grn">
+      <div class="srv-ico">📱</div>
+      <h3>Social Media Marketing</h3>
+      <p>Meta, Instagram, LinkedIn, and TikTok — we build audiences that convert and run paid social that pays back. Creative-first strategy meets data-driven targeting for real, measurable business results.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">Meta Ads</span>
+        <span class="srv-tag">Instagram Growth</span>
+        <span class="srv-tag">LinkedIn Ads</span>
+        <span class="srv-tag">TikTok Campaigns</span>
+        <span class="srv-tag">Creative Testing</span>
+        <span class="srv-tag">Audience Building</span>
+      </div>
+      <a href="#contact" class="srv-link">Launch Social Campaigns</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     STATS
+════════════════════════════════════════ -->
+<div class="stats-band">
+  <div class="stat-block">
+    <span class="stat-num">350+</span>
+    <div class="stat-lbl">Clients Served Globally</div>
+  </div>
+  <div class="stat-block">
+    <span class="stat-num">4.8×</span>
+    <div class="stat-lbl">Average Google Ads ROAS</div>
+  </div>
+  <div class="stat-block">
+    <span class="stat-num">$28M+</span>
+    <div class="stat-lbl">Ad Spend Managed</div>
+  </div>
+  <div class="stat-block">
+    <span class="stat-num">97%</span>
+    <div class="stat-lbl">Client Retention Rate</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     E-E-A-T
+════════════════════════════════════════ -->
+<section class="sec sec-alt2" id="about">
+  <div class="eyebrow">Trust Signals</div>
+  <h2 class="stitle">Built on Google's<br><em>E-E-A-T</em> Framework</h2>
+  <p class="sdesc">We don't just apply E-E-A-T to your content — we live it as an agency. Every claim here is backed by verifiable credentials and documented client outcomes.</p>
+
+  <div class="eeat-grid">
+    <div class="eeat-card" data-l="E">
+      <div class="eeat-ico">🎯</div>
+      <h3>Experience</h3>
+      <p>Our team has personally managed 1,200+ campaigns across e-commerce, SaaS, healthcare, real estate, and local businesses since 2016. We've deployed $28M+ in ad budgets — making us practitioners, not theorists. Every strategy recommendation is drawn from direct, first-hand experience across real industries and real budgets.</p>
+    </div>
+    <div class="eeat-card" data-l="E">
+      <div class="eeat-ico">🎓</div>
+      <h3>Expertise</h3>
+      <p>Every strategist holds active Google Ads, GA4, and Meta Blueprint certifications — re-validated annually. Our SEO team includes former Google Search Quality Evaluators with deep knowledge of how ranking signals actually work. We stay ahead of every algorithm update, not behind it.</p>
+    </div>
+    <div class="eeat-card" data-l="A">
+      <div class="eeat-ico">🏆</div>
+      <h3>Authoritativeness</h3>
+      <p>Named a Google Premier Partner (top 3% globally), featured in Search Engine Journal, and invited to speak at performance marketing conferences across India and the region. Our case studies are cited by industry publications. We don't ask you to trust us — our track record proves it.</p>
+    </div>
+    <div class="eeat-card" data-l="T">
+      <div class="eeat-ico">🔒</div>
+      <h3>Trustworthiness</h3>
+      <p>You own your accounts — always. No lock-in contracts, no hidden fees, full access from day one. Live Looker Studio dashboards, weekly reports, and a dedicated Slack channel. If we can't deliver results, we'll tell you before you waste money. Complete transparency is our non-negotiable standard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     PROCESS
+════════════════════════════════════════ -->
+<section class="sec sec-alt" id="process">
+  <div class="eyebrow">How It Works</div>
+  <h2 class="stitle">From First Call<br>to Full <em>ROI</em> in 4 Steps</h2>
+  <p class="sdesc">A structured onboarding that launches campaigns fast — and a continuous optimisation engine that compounds results week over week.</p>
+
+  <div class="process-list">
+    <div class="proc-item">
+      <div class="proc-num">01</div>
+      <div class="proc-body">
+        <h3>Free Account Audit & Strategy Session</h3>
+        <p>We analyse your current Google Ads account, SEO health scores, and social performance — uncovering quick wins and strategic gaps. You receive a detailed audit deck with specific findings, at no cost and no commitment. We show you exactly what's working, what isn't, and what we'd do differently.</p>
+        <span class="proc-pill">⏱ Delivered in 48 hours</span>
+      </div>
+    </div>
+    <div class="proc-item">
+      <div class="proc-num">02</div>
+      <div class="proc-body">
+        <h3>Custom 90-Day Growth Blueprint</h3>
+        <p>Based on your goals, budget, competitive landscape, and audience data, we build a tailored growth plan with realistic KPIs, channel allocation, and a creative roadmap. No copy-paste playbooks — every strategy is purpose-built for your business and your market.</p>
+        <span class="proc-pill">⏱ Built in 3–5 business days</span>
+      </div>
+    </div>
+    <div class="proc-item">
+      <div class="proc-num">03</div>
+      <div class="proc-body">
+        <h3>Precision Launch & Continuous Optimisation</h3>
+        <p>Campaigns launch within 7 days of brief approval. We run A/B tests on creatives, audiences, and landing pages every week — iterating toward the most efficient spend possible. Our weekly optimisation cadence means accounts improve consistently, not quarterly.</p>
+        <span class="proc-pill">⏱ Live within 7 business days</span>
+      </div>
+    </div>
+    <div class="proc-item">
+      <div class="proc-num">04</div>
+      <div class="proc-body">
+        <h3>Transparent Reporting & Quarterly Reviews</h3>
+        <p>Live Looker Studio dashboard connected to all platforms — accessible 24/7. Weekly performance email summaries. Monthly deep-dive strategy calls. Quarterly business reviews with competitive analysis to plan your next growth phase. You always know exactly how every rupee performs.</p>
+        <span class="proc-pill">⏱ Weekly reports, always on-time</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════ -->
+<section class="sec sec-alt2">
+  <div class="eyebrow">Client Results</div>
+  <h2 class="stitle">Real Outcomes.<br><em>Real</em> Businesses.</h2>
+  <p class="sdesc">We measure success by client results — not awards or follower counts. Here's what happened when they trusted us with their growth.</p>
+
+  <div class="testi-grid">
+    <div class="testi-card">
+      <span class="result-pill">📈 ROAS 1.8× → 5.2×</span>
+      <div class="tq-mark">"</div>
+      <p class="testi-text">Our Google Ads were burning money before NexaGrowth. They rebuilt the entire account structure, launched Performance Max, and within 90 days our ROAS went from 1.8× to 5.2×. The ROI pays for their fee ten times over every single month.</p>
+      <div class="testi-meta">
+        <div class="tav a">SR</div>
+        <div>
+          <div class="tname">Sarah Rahman</div>
+          <div class="trole">CEO, StyleHive E-Commerce</div>
+        </div>
+        <div class="tstars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <span class="result-pill">🔍 +340% Organic Traffic</span>
+      <div class="tq-mark">"</div>
+      <p class="testi-text">Organic traffic grew 340% in 6 months. They fixed technical SEO issues I didn't even know existed, then built a content strategy that ranks. We're on page 1 for 40+ high-intent keywords. Our inbound pipeline is completely transformed.</p>
+      <div class="testi-meta">
+        <div class="tav b">MK</div>
+        <div>
+          <div class="tname">Marcus Klein</div>
+          <div class="trole">Founder, LegalEdge SaaS</div>
+        </div>
+        <div class="tstars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <span class="result-pill">💰 −60% Cost Per Lead</span>
+      <div class="tq-mark">"</div>
+      <p class="testi-text">They unified our Meta and Google attribution so we finally understood the real customer journey. Cost-per-lead dropped 60% while lead quality improved significantly. The live dashboard alone saved us 15 hours a month in manual reporting work.</p>
+      <div class="testi-meta">
+        <div class="tav c">AP</div>
+        <div>
+          <div class="tname">Aisha Patel</div>
+          <div class="trole">Marketing Director, CityClinic</div>
+        </div>
+        <div class="tstars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     WHY US
+════════════════════════════════════════ -->
+<section class="sec sec-alt">
+  <div class="why-layout">
+    <div>
+      <div class="eyebrow">Our Edge</div>
+      <h2 class="stitle">A Growth Partner,<br>Not Just <em>an Agency</em></h2>
+      <p class="sdesc" style="margin-bottom:0">We operate inside your business — not at arm's length. Every decision is made as if it's our own money on the line.</p>
+
+      <div class="why-feats">
+        <div class="why-feat">
+          <div class="why-feat-ico">🎯</div>
+          <div>
+            <h4>First-Party Data Strategy</h4>
+            <p>We build audiences from your CRM and website data — future-proofing your targeting against cookie deprecation before it impacts your campaigns and results.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-ico">🔗</div>
+          <div>
+            <h4>Full-Funnel Attribution</h4>
+            <p>GA4 + GTM correctly configured so every sale and lead is attributed to the right channel. No more guessing which campaigns actually drive your revenue.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-ico">⚡</div>
+          <div>
+            <h4>Rapid Creative Testing</h4>
+            <p>5–10 new ad creatives tested every month using our structured sprint process. We identify winning combinations in weeks, not quarters.</p>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-ico">📊</div>
+          <div>
+            <h4>Live Reporting Dashboard</h4>
+            <p>24/7 access to your custom Looker Studio dashboard. See ROAS, CPA, conversions, and trends in real time — no waiting for monthly reports.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-panel">
+      <h3>Active Certifications &amp; Partnerships</h3>
+      <div class="cert-list">
+        <div class="cert-row">🏆 Google Premier Partner<span class="cert-badge">ACTIVE</span></div>
+        <div class="cert-row">✅ Google Ads Certified — All Tracks<span class="cert-badge">ACTIVE</span></div>
+        <div class="cert-row">📊 Google Analytics 4 Certified<span class="cert-badge">ACTIVE</span></div>
+        <div class="cert-row">🔧 Google Tag Manager Expert<span class="cert-badge">ACTIVE</span></div>
+        <div class="cert-row">📘 Meta Business Partner<span class="cert-badge">ACTIVE</span></div>
+        <div class="cert-row">🔵 Meta Blueprint Certified<span class="cert-badge">ACTIVE</span></div>
+        <div class="cert-row">🔍 Semrush Agency Partner<span class="cert-badge">ACTIVE</span></div>
+        <div class="cert-row">🎓 HubSpot Marketing Certified<span class="cert-badge">ACTIVE</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     PRICING
+════════════════════════════════════════ -->
+<section class="sec sec-alt2" id="pricing">
+  <div class="eyebrow" style="justify-content:center;display:flex">Pricing</div>
+  <h2 class="stitle" style="text-align:center">Transparent Pricing.<br><em>Zero</em> Surprises.</h2>
+  <p class="sdesc" style="text-align:center;max-width:480px;margin:0 auto 56px">Every plan includes full account ownership, a dedicated account manager, live reporting, and no lock-in contracts.</p>
+
+  <div class="price-grid">
+    <div class="price-card">
+      <p class="price-plan">Starter</p>
+      <div class="price-amt"><sup>$</sup>997</div>
+      <p class="price-per">per month · New &amp; growing brands</p>
+      <div class="price-div"></div>
+      <ul class="price-feats">
+        <li>Google Ads management (1 channel)</li>
+        <li>Up to $5,000 monthly ad spend</li>
+        <li>GA4 + GTM setup &amp; configuration</li>
+        <li>Keyword &amp; audience research</li>
+        <li>Monthly strategy call</li>
+        <li>Weekly performance email report</li>
+        <li>Full account ownership — always</li>
+      </ul>
+      <a href="#contact" class="price-btn light">Get Started →</a>
+    </div>
+
+    <div class="price-card featured">
+      <p class="price-plan">Growth</p>
+      <div class="price-amt" style="color:var(--cream)"><sup>$</sup>2,497</div>
+      <p class="price-per">per month · Scaling brands</p>
+      <div class="price-div"></div>
+      <ul class="price-feats">
+        <li>Google Ads + Meta Ads (2 channels)</li>
+        <li>Up to $25,000 monthly ad spend</li>
+        <li>SEO audit + on-page optimisation</li>
+        <li>GA4, GTM, Meta Pixel full setup</li>
+        <li>5 ad creatives per month</li>
+        <li>Bi-weekly strategy calls</li>
+        <li>Looker Studio live dashboard</li>
+        <li>Priority Slack channel (24h reply)</li>
+        <li>Weekly A/B testing cadence</li>
+      </ul>
+      <a href="#contact" class="price-btn inv">Get Started →</a>
+    </div>
+
+    <div class="price-card">
+      <p class="price-plan">Performance</p>
+      <div class="price-amt"><sup>$</sup>4,997</div>
+      <p class="price-per">per month · Established brands</p>
+      <div class="price-div"></div>
+      <ul class="price-feats">
+        <li>All channels (Google, Meta, LinkedIn)</li>
+        <li>Unlimited ad spend management</li>
+        <li>Full SEO + content strategy</li>
+        <li>Weekly calls + dedicated strategist</li>
+        <li>10 ad creatives per month</li>
+        <li>CRO + landing page optimisation</li>
+        <li>Custom attribution modelling</li>
+        <li>Competitor monitoring &amp; alerts</li>
+        <li>Quarterly business reviews</li>
+      </ul>
+      <a href="#contact" class="price-btn light">Get Started →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FAQ  (pure CSS accordion — no JS)
+════════════════════════════════════════ -->
+<section class="sec sec-alt" id="faq">
+  <div class="eyebrow" style="display:flex;justify-content:center">FAQ</div>
+  <h2 class="stitle" style="text-align:center;margin-bottom:48px">Frequently Asked<br><em>Questions</em></h2>
+
+  <div class="faq-wrap">
+
+    <div class="faq-item">
+      <input type="checkbox" class="faq-toggle" id="faq1">
+      <label class="faq-label" for="faq1">
+        Can I use this landing page for Google Ads and Meta Ads campaigns?
+        <span class="faq-icon"></span>
+      </label>
+      <div class="faq-answer">
+        Yes — this page is pre-wired with Google Ads conversion tracking, GA4 event tracking, Google Tag Manager, and Meta Pixel. Replace the four placeholder IDs with your real ones and you're live. The page meets Google Ads and Meta Ads landing page quality standards: clear call-to-action, content that matches ad intent, fast load time, and HTTPS compatibility (GitHub Pages provides HTTPS automatically at no cost).
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" class="faq-toggle" id="faq2">
+      <label class="faq-label" for="faq2">
+        Do you require long-term contracts?
+        <span class="faq-icon"></span>
+      </label>
+      <div class="faq-answer">
+        No lock-in, ever. We operate on rolling monthly agreements with 30 days' notice to cancel. We do recommend a minimum 3-month engagement for SEO and paid channels — real results need runway — but it's never forced contractually. Your commitment is performance, not paperwork.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" class="faq-toggle" id="faq3">
+      <label class="faq-label" for="faq3">
+        Who owns the ad accounts and all campaign data?
+        <span class="faq-icon"></span>
+      </label>
+      <div class="faq-answer">
+        You own everything — always. We work inside your Google Ads, Meta Business Manager, and GA4 accounts. We never create agency-owned accounts on your behalf. If you ever leave, you take all campaigns, historical data, audiences, and creative assets with you. No exceptions, no hostage accounts, ever.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" class="faq-toggle" id="faq4">
+      <label class="faq-label" for="faq4">
+        How is performance tracked and reported?
+        <span class="faq-icon"></span>
+      </label>
+      <div class="faq-answer">
+        Every client receives a live Looker Studio dashboard connected to GA4, Google Ads, and Meta Ads — accessible 24/7, no login required. We send a weekly performance email summary and hold monthly deep-dive strategy calls. Performance plan clients also receive quarterly business reviews with competitive landscape analysis.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" class="faq-toggle" id="faq5">
+      <label class="faq-label" for="faq5">
+        How quickly can campaigns go live?
+        <span class="faq-icon"></span>
+      </label>
+      <div class="faq-answer">
+        Google Ads and Meta Ads campaigns typically launch within 5–7 business days of receiving account access and brief approval. SEO technical audits begin on day one, with on-page recommendations implemented in the first two weeks. We move fast without cutting corners on strategy or setup quality.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" class="faq-toggle" id="faq6">
+      <label class="faq-label" for="faq6">
+        What's included in the free audit?
+        <span class="faq-icon"></span>
+      </label>
+      <div class="faq-answer">
+        A thorough review of your Google Ads account structure (if you have one), an SEO health report via Ahrefs and Semrush, website speed and Core Web Vitals analysis, and a review of your existing social ad performance. We deliver a written audit deck with specific findings and prioritised recommendations — no sales pitch, just honest insights — within 48 hours.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CONTACT + FORM
+════════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+
+    <div class="contact-info">
+      <div class="eyebrow">Get Started</div>
+      <h2 class="stitle">Let's Build Your<br><em>Growth Plan.</em></h2>
+      <p>Book a free 30-minute strategy session. We'll audit your current setup and map out exactly what it would take to hit your growth goals. No pressure, no pitch — just honest, actionable insights.</p>
+
+      <div class="cpoints">
+        <div class="cpoint">
+          <div class="cpoint-ico">📧</div>
+          <div>
+            <div class="cpoint-lbl">Email Us</div>
+            <div class="cpoint-val">hello@nexagrowth.io</div>
+          </div>
+        </div>
+        <div class="cpoint">
+          <div class="cpoint-ico">📞</div>
+          <div>
+            <div class="cpoint-lbl">Call Us</div>
+            <div class="cpoint-val">+91 98765 43210</div>
+          </div>
+        </div>
+        <div class="cpoint">
+          <div class="cpoint-ico">⏱</div>
+          <div>
+            <div class="cpoint-lbl">Response Time</div>
+            <div class="cpoint-val">Within 24 business hours</div>
+          </div>
+        </div>
+        <div class="cpoint">
+          <div class="cpoint-ico">📍</div>
+          <div>
+            <div class="cpoint-lbl">Serving</div>
+            <div class="cpoint-val">India &amp; Worldwide (Remote)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ CONTACT FORM — fires GA4 + Meta Pixel + GTM on submit -->
+    <div class="form-card">
+      <form class="form-inner" method="POST" action= "https://formspree.io/f/xdawdyop"
+        onsubmit="
+          if(typeof gtag!=='undefined'){gtag('event','generate_lead',{event_category:'contact_form'});gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/XXXXXXX'});}
+          if(typeof fbq!=='undefined'){fbq('track','Lead');}
+          if(typeof dataLayer!=='undefined'){dataLayer.push({event:'form_submission'});}
+       return true;
+        ">
+
+        <div class="form-title">Request Your Free Audit</div>
+        <div class="form-sub">Tell us about your business and goals. We'll review and respond within 24 hours.</div>
+
+        <div class="frow">
+          <div class="field">
+            <label for="f-fn">First Name *</label>
+            <input type="text" id="f-fn" name="first_name" placeholder="Rahul" required/>
+          </div>
+          <div class="field">
+            <label for="f-ln">Last Name *</label>
+            <input type="text" id="f-ln" name="last_name" placeholder="Sharma" required/>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-em">Business Email *</label>
+          <input type="email" id="f-em" name="email" placeholder="rahul@yourbrand.com" required/>
+        </div>
+
+        <div class="frow">
+          <div class="field">
+            <label for="f-ph">Phone Number</label>
+            <input type="tel" id="f-ph" name="phone" placeholder="+91 98765 43210"/>
+          </div>
+          <div class="field">
+            <label for="f-co">Company / Brand *</label>
+            <input type="text" id="f-co" name="company" placeholder="Your Brand Name" required/>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-wu">Website URL</label>
+          <input type="url" id="f-wu" name="website" placeholder="https://yourbrand.com"/>
+        </div>
+
+        <div class="field">
+          <label>Services Interested In</label>
+          <div class="svc-checks">
+            <div class="svc-check-item">
+              <input type="checkbox" id="svc1" name="services" value="google_ads"/>
+              <label for="svc1"><span>📈</span> Google Ads</label>
+            </div>
+            <div class="svc-check-item">
+              <input type="checkbox" id="svc2" name="services" value="seo"/>
+              <label for="svc2"><span>🔍</span> SEO</label>
+            </div>
+            <div class="svc-check-item">
+              <input type="checkbox" id="svc3" name="services" value="meta_ads"/>
+              <label for="svc3"><span>📱</span> Meta / Social Ads</label>
+            </div>
+            <div class="svc-check-item">
+              <input type="checkbox" id="svc4" name="services" value="analytics"/>
+              <label for="svc4"><span>📊</span> Analytics Setup</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-bud">Monthly Marketing Budget</label>
+          <select id="f-bud" name="budget">
+            <option value="" disabled selected>Select your budget range</option>
+            <option>Less than $500 / month</option>
+            <option>$500 – $1,000 / month</option>
+            <option>$1,000 – $3,000 / month</option>
+            <option>$3,000 – $5,000 / month</option>
+            <option>$5,000 – $10,000 / month</option>
+            <option>$10,000 – $25,000 / month</option>
+            <option>$25,000+ / month</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-tl">Timeline to See Results</label>
+          <select id="f-tl" name="timeline">
+            <option value="" disabled selected>Select your timeline</option>
+            <option>ASAP — I need results within 30 days</option>
+            <option>1–3 months — Steady ramp-up is fine</option>
+            <option>3–6 months — Building for the long term</option>
+            <option>Just researching right now</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-msg">Anything else we should know?</label>
+          <textarea id="f-msg" name="message" placeholder="Tell us about your business, current challenges, or specific goals you want to achieve..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Request Free Audit →</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nlogo" style="color:var(--cream)">
+        <div class="lmark" style="background:rgba(250,248,244,.15);color:var(--cream);">N</div>
+        NexaGrowth
+      </a>
+      <p>A performance marketing agency helping ambitious brands scale through data-driven Google Ads, compounding SEO, and social media marketing that converts.</p>
+      <div class="footer-socials">
+        <a href="#" class="fsoc-btn">in</a>
+        <a href="#" class="fsoc-btn">𝕏</a>
+        <a href="#" class="fsoc-btn">▶</a>
+        <a href="#" class="fsoc-btn">f</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Google Ads Management</a></li>
+        <li><a href="#services">SEO &amp; Content</a></li>
+        <li><a href="#services">Social Media Marketing</a></li>
+        <li><a href="#services">Analytics &amp; GTM</a></li>
+        <li><a href="#services">Conversion Rate Opt.</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Blog &amp; Resources</a></li>
+        <li><a href="#">Certifications</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@nexagrowth.io">hello@nexagrowth.io</a></li>
+        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+        <li><a href="#">Schedule a Call</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Free SEO Audit Tool</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 NexaGrowth Digital. All rights reserved.</span>
+    <span>
+      <a href="#">Privacy Policy</a>&nbsp;·&nbsp;
+      <a href="#">Terms of Service</a>&nbsp;·&nbsp;
+      <a href="#">Cookie Policy</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
